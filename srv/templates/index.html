@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends base %}
+
+{% block title %}Pr&nl.AI - custom strategies on a fly{% endblock %}
+
+{% block postamble %}
+  <link rel="icon" href="/srv/static/favicon.ico" type="image/x-icon"/>
+  <style>
+    {% include 'styles.css' %}
+  </style>
+{% endblock %}
+
+{% block contents %}
+  <div class="content">
+    <h1><a href="http://www.pnlai.com">P&L.AI</a>: custom strategies on a fly</h1>
+
+    <p>Create, test and compare simple technical strategies... or 
+    <a href="{{ login }}">Login</a> / <a href="{{ logout }}">Logout</a> / <a href="{{ register }}">Register</a>
+    </p> 
+
+    {{ super() }}
+
+  </div>
+{% endblock %}
+</html>
